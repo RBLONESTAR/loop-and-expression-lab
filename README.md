@@ -24,9 +24,9 @@ In this lab, you will perform integer division and use a loop to display colored
 
 ## Before you begin
 
-1. Download this repository using **Code → Download ZIP**, then extract it, or clone it if you already use Git.
-2. Use the course's configured **32-bit MASM / Irvine32 environment**. In Visual Studio, select **x86/Win32** rather than x64.
-3. Create **two separate projects**, one for each program, using the course's Irvine32 project template or setup instructions.
+1. Download this repository using Code → Download ZIP, then extract it, or clone it if you already use Git.
+2. In Visual Studio, select x86/Win32 rather than x64.
+3. Create two separate projects, one for each program, using the course's Irvine32 project template or setup instructions.
 4. Add only `Part1_Division.asm` to the first project and only `Part2_ColorLoop.asm` to the second. Replace any existing template source file containing `main` so each project has only one entry point.
 5. Complete the name, course/section, and date comments in each file.
 
@@ -40,10 +40,10 @@ Write a program that divides two integers and displays the result.
 
 Your program must:
 
-1. Define a dividend and a **nonzero** divisor in memory.
+1. Define a dividend and a nonzero divisor in memory.
 2. Perform integer division using the appropriate assembly division instruction.
 3. Display labeled values for the dividend, divisor, quotient, and remainder.
-4. Use values that produce a **nonzero remainder** to demonstrate integer division.
+4. Use values that produce a nonzero remainder to demonstrate integer division.
 5. Include comments explaining register preparation, the division operation, and how you preserve the results for output.
 6. Exit cleanly.
 
@@ -109,16 +109,16 @@ Keep foreground and background values within the valid range of 0–15. Select f
 
 ### Repair checklist
 
-- [ ] Data declarations appear in the correct section.
-- [ ] Executable instructions appear inside the code section and procedure.
-- [ ] The loop counter is initialized before the loop.
-- [ ] Each iteration selects a color, prints the message, and starts a new line.
-- [ ] The color changes between printed lines.
-- [ ] The loop repeats exactly four times.
-- [ ] The program exits after the loop finishes.
-- [ ] The procedure and program end directives are in the correct order.
+-  Data declarations appear in the correct section.
+-  Executable instructions appear inside the code section and procedure.
+-  The loop counter is initialized before the loop.
+-  Each iteration selects a color, prints the message, and starts a new line.
+-  The color changes between printed lines.
+-  The loop repeats exactly four times.
+-  The program exits after the loop finishes.
+-  The procedure and program end directives are in the correct order.
 
-> **Formatting tip:** You may set your editor's tab size to 5 for alignment. This is optional and does not change program behavior.
+
 
 ## Irvine32 quick reference
 
@@ -134,11 +134,11 @@ References: [WriteString](https://csc.csudh.edu/mmccullough/asm/help/source/irvi
 
 ## Submission requirements
 
-Upload the following to **D2L**:
+Upload the following to D2L:
 
-1. **`Part1_Division.asm`** — your completed division program.
-2. **`Part2_ColorLoop.asm`** — your repaired color-loop program.
-3. **Output screenshot(s)** — evidence clearly showing the console output for both programs. Separate screenshots named `Part1_Output.png` and `Part2_Output.png` are recommended; JPG screenshots are also acceptable.
+1. `Part1_Division.asm` — your completed division program.
+2. `Part2_ColorLoop.asm` — your repaired color-loop program.
+3. Output screenshots — evidence clearly showing the console output for both programs. Separate screenshots named `Part1_Output.png` and `Part2_Output.png` are recommended; JPG screenshots are also acceptable.
 
 Your Part 1 evidence must show the dividend, divisor, quotient, and remainder. Your Part 2 evidence must show all four lines in four distinct colors.
 
@@ -146,11 +146,13 @@ Your Part 1 evidence must show the dividend, divisor, quotient, and remainder. Y
 
 ## Before you submit
 
-- [ ] Both programs build and run independently in the course environment.
-- [ ] Part 1 uses a division instruction and demonstrates a nonzero remainder.
-- [ ] Part 1 displays all four labeled values correctly.
-- [ ] Part 2 uses a loop and all three required procedures: `SetTextColor`, `WriteString`, and `Crlf`.
-- [ ] Part 2 prints exactly four message lines in different, readable colors.
-- [ ] Both source files contain identifying information and explanatory comments.
-- [ ] Screenshots clearly demonstrate the output for both parts.
-- [ ] Both source files and the screenshots are attached to the D2L submission.
+-  Both programs build and run independently in the course environment.
+-  Part 1 uses a division instruction and demonstrates a nonzero remainder.
+-  Part 1 displays all four labeled values correctly.
+-  Part 2 uses a loop and all three required procedures: `SetTextColor`, `WriteString`, and `Crlf`.
+-  Part 2 prints exactly four message lines in different, readable colors.
+-  Both source files contain identifying information and explanatory comments.
+-  Screenshots clearly demonstrate the output for both parts.
+-  Both source files and the screenshots are attached to the D2L submission.
+
+  
